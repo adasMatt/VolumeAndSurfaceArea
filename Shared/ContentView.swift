@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     //version 1, bad code
+    //Sphere.swift does nothing useful yet so don't look at that
     //    @ObservedObject private var circleModel = Circle()
     //won’t use classes for v1 since the code is supposed to be “bad”
     //for version 2, use 2 separated classes Sphere and Cube?

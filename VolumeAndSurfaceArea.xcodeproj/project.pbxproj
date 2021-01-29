@@ -9,22 +9,13 @@
 /* Begin PBXBuildFile section */
 		7FBEBD8B25BB98A100D0F7C0 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD8A25BB98A100D0F7C0 /* Tests_iOS.swift */; };
 		7FBEBD9625BB98A100D0F7C0 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD9525BB98A100D0F7C0 /* Tests_macOS.swift */; };
-		7FBEBD9825BB98A100D0F7C0 /* VolumeAndSurfaceAreaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD6F25BB98A000D0F7C0 /* VolumeAndSurfaceAreaApp.swift */; };
 		7FBEBD9925BB98A100D0F7C0 /* VolumeAndSurfaceAreaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD6F25BB98A000D0F7C0 /* VolumeAndSurfaceAreaApp.swift */; };
-		7FBEBD9A25BB98A100D0F7C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD7025BB98A000D0F7C0 /* ContentView.swift */; };
 		7FBEBD9B25BB98A100D0F7C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBD7025BB98A000D0F7C0 /* ContentView.swift */; };
-		7FBEBD9C25BB98A100D0F7C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBEBD7125BB98A100D0F7C0 /* Assets.xcassets */; };
 		7FBEBD9D25BB98A100D0F7C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FBEBD7125BB98A100D0F7C0 /* Assets.xcassets */; };
+		7FBEBDB225BB9AC100D0F7C0 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBEBDB025BB9AC100D0F7C0 /* Sphere.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7FBEBD8725BB98A100D0F7C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7FBEBD6A25BB98A000D0F7C0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7FBEBD7525BB98A100D0F7C0;
-			remoteInfo = "VolumeAndSurfaceArea (iOS)";
-		};
 		7FBEBD9225BB98A100D0F7C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7FBEBD6A25BB98A000D0F7C0 /* Project object */;
@@ -38,7 +29,6 @@
 		7FBEBD6F25BB98A000D0F7C0 /* VolumeAndSurfaceAreaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeAndSurfaceAreaApp.swift; sourceTree = "<group>"; };
 		7FBEBD7025BB98A000D0F7C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FBEBD7125BB98A100D0F7C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7FBEBD7625BB98A100D0F7C0 /* VolumeAndSurfaceArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeAndSurfaceArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBEBD7925BB98A100D0F7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FBEBD7E25BB98A100D0F7C0 /* VolumeAndSurfaceArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeAndSurfaceArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBEBD8025BB98A100D0F7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,16 +39,10 @@
 		7FBEBD9125BB98A100D0F7C0 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FBEBD9525BB98A100D0F7C0 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		7FBEBD9725BB98A100D0F7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FBEBDB025BB9AC100D0F7C0 /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7FBEBD7325BB98A100D0F7C0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7FBEBD7B25BB98A100D0F7C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +85,7 @@
 				7FBEBD6F25BB98A000D0F7C0 /* VolumeAndSurfaceAreaApp.swift */,
 				7FBEBD7025BB98A000D0F7C0 /* ContentView.swift */,
 				7FBEBD7125BB98A100D0F7C0 /* Assets.xcassets */,
+				7FBEBDB025BB9AC100D0F7C0 /* Sphere.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -108,7 +93,6 @@
 		7FBEBD7725BB98A100D0F7C0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7FBEBD7625BB98A100D0F7C0 /* VolumeAndSurfaceArea.app */,
 				7FBEBD7E25BB98A100D0F7C0 /* VolumeAndSurfaceArea.app */,
 				7FBEBD8625BB98A100D0F7C0 /* Tests iOS.xctest */,
 				7FBEBD9125BB98A100D0F7C0 /* Tests macOS.xctest */,
@@ -154,23 +138,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7FBEBD7525BB98A100D0F7C0 /* VolumeAndSurfaceArea (iOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7FBEBDA025BB98A100D0F7C0 /* Build configuration list for PBXNativeTarget "VolumeAndSurfaceArea (iOS)" */;
-			buildPhases = (
-				7FBEBD7225BB98A100D0F7C0 /* Sources */,
-				7FBEBD7325BB98A100D0F7C0 /* Frameworks */,
-				7FBEBD7425BB98A100D0F7C0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "VolumeAndSurfaceArea (iOS)";
-			productName = "VolumeAndSurfaceArea (iOS)";
-			productReference = 7FBEBD7625BB98A100D0F7C0 /* VolumeAndSurfaceArea.app */;
-			productType = "com.apple.product-type.application";
-		};
 		7FBEBD7D25BB98A100D0F7C0 /* VolumeAndSurfaceArea (macOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FBEBDA325BB98A100D0F7C0 /* Build configuration list for PBXNativeTarget "VolumeAndSurfaceArea (macOS)" */;
@@ -199,7 +166,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				7FBEBD8825BB98A100D0F7C0 /* PBXTargetDependency */,
 			);
 			name = "Tests iOS";
 			productName = "Tests iOS";
@@ -233,9 +199,6 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					7FBEBD7525BB98A100D0F7C0 = {
-						CreatedOnToolsVersion = 12.3;
-					};
 					7FBEBD7D25BB98A100D0F7C0 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -262,7 +225,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7FBEBD7525BB98A100D0F7C0 /* VolumeAndSurfaceArea (iOS) */,
 				7FBEBD7D25BB98A100D0F7C0 /* VolumeAndSurfaceArea (macOS) */,
 				7FBEBD8525BB98A100D0F7C0 /* Tests iOS */,
 				7FBEBD9025BB98A100D0F7C0 /* Tests macOS */,
@@ -271,14 +233,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7FBEBD7425BB98A100D0F7C0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7FBEBD9C25BB98A100D0F7C0 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7FBEBD7C25BB98A100D0F7C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,21 +258,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7FBEBD7225BB98A100D0F7C0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7FBEBD9A25BB98A100D0F7C0 /* ContentView.swift in Sources */,
-				7FBEBD9825BB98A100D0F7C0 /* VolumeAndSurfaceAreaApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7FBEBD7A25BB98A100D0F7C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7FBEBD9B25BB98A100D0F7C0 /* ContentView.swift in Sources */,
 				7FBEBD9925BB98A100D0F7C0 /* VolumeAndSurfaceAreaApp.swift in Sources */,
+				7FBEBDB225BB9AC100D0F7C0 /* Sphere.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,11 +287,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7FBEBD8825BB98A100D0F7C0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7FBEBD7525BB98A100D0F7C0 /* VolumeAndSurfaceArea (iOS) */;
-			targetProxy = 7FBEBD8725BB98A100D0F7C0 /* PBXContainerItemProxy */;
-		};
 		7FBEBD9325BB98A100D0F7C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7FBEBD7D25BB98A100D0F7C0 /* VolumeAndSurfaceArea (macOS) */;
@@ -462,51 +403,6 @@
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-			};
-			name = Release;
-		};
-		7FBEBDA125BB98A100D0F7C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FRW7Z34LU;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MAiit.VolumeAndSurfaceArea;
-				PRODUCT_NAME = VolumeAndSurfaceArea;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7FBEBDA225BB98A100D0F7C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3FRW7Z34LU;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MAiit.VolumeAndSurfaceArea;
-				PRODUCT_NAME = VolumeAndSurfaceArea;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -655,15 +551,6 @@
 			buildConfigurations = (
 				7FBEBD9E25BB98A100D0F7C0 /* Debug */,
 				7FBEBD9F25BB98A100D0F7C0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7FBEBDA025BB98A100D0F7C0 /* Build configuration list for PBXNativeTarget "VolumeAndSurfaceArea (iOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7FBEBDA125BB98A100D0F7C0 /* Debug */,
-				7FBEBDA225BB98A100D0F7C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

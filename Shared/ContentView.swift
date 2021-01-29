@@ -24,6 +24,7 @@ struct ContentView: View {
     @State var surfAreaSphereText = ""
     @State var volSphere = 0.0
     @State var volSphereText = ""
+    @State var length = 0.0
     @State var surfAreaBox = 0.0
     @State var surfAreaBoxText = ""
     @State var volBox = 0.0
@@ -32,11 +33,11 @@ struct ContentView: View {
     var body: some View {
         
         VStack{
-            Text("Radius")
+            Text("Sphere Radius")
                 .padding(.top)
                 .padding(.bottom, 0)
                 //TextField("Enter Radius", text: $radiusString, onCommit: {self.calculateCircle()})
-            TextField("Enter Radius", text: $radiusString, onCommit: {self.calcSphereStuff(passedRadius: Double(radiusString)!); self.calcBoxStuff(passedLength: Double(radiusString)!)}) //maybe this is right, or maybe not?
+            TextField("Enter Radius", text: $radiusString, onCommit: {self.calcSphereAndBoxStuff(passedRadius: Double(radiusString)!)}) //maybe this is right, or maybe not?
                 .padding(.horizontal)
                 .frame(width: 100)
                 .padding(.top, 0)
@@ -94,7 +95,7 @@ struct ContentView: View {
                     .padding(.bottom, 30)
                     } //endHStack
 
-            Button("Calculate", action: {self.calcSphereStuff(passedRadius: Double(radiusString)!); self.calcBoxStuff(passedLength: Double(radiusString)!)})
+            Button("Calculate", action: {self.calcSphereAndBoxStuff(passedRadius: Double(radiusString)!)})
                 .padding(.bottom)
                 .padding()
             
@@ -102,7 +103,7 @@ struct ContentView: View {
         
     }
     
-    func calcSphereStuff(passedRadius: Double){
+    func calcSphereAndBoxStuff(passedRadius: Double){
         
         let radius = passedRadius
         surfAreaSphere = 4 * Double.pi * radius * radius
@@ -119,10 +120,15 @@ struct ContentView: View {
         return
         }
         
-    func calcBoxStuff(passedLength: Double){
+    /*func calcBoxStuff(passedLength: Double){
+        
+        let length = passedLength
+        surfAreaBox = 4 * length
+        surfAreaBoxText = ""
         
     }
-    }
+    */
+}
 
 
 struct ContentView_Previews: PreviewProvider {

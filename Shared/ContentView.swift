@@ -3,17 +3,12 @@
 //  Shared
 //
 //  Created by Matthew Adas on 1/22/21.
-//
+//  version 3, Sphere and Cube are now subclasses of NDimensionalObj, which is actually a pretty boring parent class
 
 import SwiftUI
 
 struct ContentView: View {
-    //version 2, separate classes Sphere and Cube
-    //for version 3, subclasses will be Sphere and Cube but their parent classes will be..
-    //...Ellipsoid and Box
-    //Box subclass should have length, width, height instead of just radius?
-    //Box subclass can be “Cube” for v2
-    //this way i can maybe use the overwrite command for calculating
+    
     @ObservedObject private var sphereModel = Sphere()
     @ObservedObject private var cubeModel = Cube()
     @State var radiusString = "1.0"
@@ -24,7 +19,7 @@ struct ContentView: View {
             Text("Sphere Radius")
                 .padding(.top)
                 .padding(.bottom, 0)
-                //TextField("Enter Radius", text: $radiusString, onCommit: {self.calculateCircle()})
+                //functions for calculating Surface Area and Volume of both a Sphere and Cube are called from their respective classes upon typing Enter/Return here
             TextField("Enter Radius", text: $radiusString, onCommit: {
                 sphereModel.calculateSphereAreaAndVolume(passedRadius: Double(radiusString)!)
                 cubeModel.calculateCubeAreaAndVolume(passedLength: Double(radiusString)!)
@@ -34,6 +29,7 @@ struct ContentView: View {
                 .padding(.top, 0)
                 .padding(.bottom, 30)
             HStack{
+                //HStacks within the VStack are organizing the GUI layout to have Sphere on the left and Box/Cube on the right
                 Text("Surface Area\nof Sphere")
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 8.0)
@@ -43,7 +39,7 @@ struct ContentView: View {
             }
 
             HStack{
-                
+                //Sphere on the left, Box/Cube on the right
                 TextField("", text: $sphereModel.surfAreaSphereText)
                     .padding(.horizontal)
                     .frame(width: 100)
@@ -59,6 +55,7 @@ struct ContentView: View {
             }
 
             HStack{
+                //Sphere on the left, Box/Cube on the right
                 Text("Volume of\nSphere")
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 15.0)
@@ -70,6 +67,7 @@ struct ContentView: View {
             }
             
             HStack{
+                //Sphere on the left, Box/Cube on the right
                 TextField("", text: ($sphereModel.volSphereText))
                     .padding(.horizontal)
                     .frame(width: 100)
@@ -82,9 +80,10 @@ struct ContentView: View {
                     .frame(width: 100)
                     .padding(.top, 0)
                     .padding(.bottom, 30)
-                    } //endHStack
+                    }
 
             Button("Calculate", action: {
+                //functions for calculating Surface Area and Volume of both a Sphere and Cube are called from their respective classes upon clicking the Calculate button in the GUI here
                 sphereModel.calculateSphereAreaAndVolume(passedRadius: Double(radiusString)!)
                 cubeModel.calculateCubeAreaAndVolume(passedLength: Double(radiusString)!)
             })
@@ -94,15 +93,6 @@ struct ContentView: View {
         } //end VStack
         
     }
-    
-
-    /*
-    func calculationFunction(){
-        
-        sphereModel.calculateSphereAreaAndVolume(<#T##Double#>(radiusString)!)
-        cubeModel.calculateCubeAreaAndVolume(<#T##Double#>(radiusString)!)
-        
-    }*/
     
 }
 

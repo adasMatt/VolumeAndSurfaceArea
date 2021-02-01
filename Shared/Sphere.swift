@@ -3,14 +3,14 @@
 //  VolumeAndSurfaceArea
 //
 //  Created by Matthew Adas on 1/22/21.
-//
+//  This subclass only inherits radiusString and NSObject from the parent class, it seems ObservableObject has to be called separately in each subclass
 
 import SwiftUI
 
-class Sphere: NSObject, ObservableObject{
+class Sphere: NDimensionalObj, ObservableObject{
     
     var radius = 1.0
-    @Published var radiusString = "1.0"
+
     @Published var surfAreaSphere = 0.0
     @Published var volSphere = 0.0
     @Published var surfAreaSphereText = ""
@@ -24,6 +24,7 @@ class Sphere: NSObject, ObservableObject{
         surfAreaSphereText = String(format: "%7.5f", surfAreaSphere)
         volSphere = 4 / 3 * Double.pi * radius * radius * radius
         volSphereText = String(format: "%7.5f", volSphere)
+        return
     }
 
 }
